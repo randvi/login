@@ -77,16 +77,10 @@ h2 {
     color: rgba(225,225,225,0.6);
 }
 
-<<<<<<< HEAD
 .loginBox input[type="text"]:focus,
 .loginBox input[type="password"]:focus {
     border-bottom: 1.2px solid blue;
 } 
-=======
-@media (max-width: 576px) {
-    .bg {background-position: 50%}
-}
->>>>>>> 5315e00cb64a7e868ba7d8aa8a4255ac67004be9
 
 .loginBox input[type="submit"] {
     border: none;
