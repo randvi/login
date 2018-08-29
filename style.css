@@ -16,13 +16,15 @@ html, body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 350px;
+    width: 320px;
     height: 430px;
     padding: 80px 40px;
     box-sizing: border-box;
     /*font-size: 20px;*/
     background: rgba(0, 0, 0, 0.6);
     color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .8);
 } 
 .user {
     width: 150px;
@@ -59,20 +61,47 @@ h2 {
     outline: none;
     height: 40px;
     color: #fff;
+    transition: .5s;
     font-size: 16px;
+
 }
+
 ::placeholder {
     color: rgba(225,225,225,0.6);
 }
 
-@media (max-width: 576px) {
-    .bg {background-position: 50%}
-}
+.loginBox input[type="text"]:focus,
+.loginBox input[type="password"]:focus {
+    border-bottom: 1.2px solid blue;
+} 
+
 .loginBox input[type="submit"] {
     border: none;
     outline: none;
     height: 40px;
     color: #fff;
     font-size: 16px;
-    background: #ff267e;
+    background: #ff265c;
+    border-radius: 50px;
+    transition: .5s;
+}
+
+.loginBox input[type="submit"]:hover {
+    background: red;
+}
+
+
+.forgot {
+    text-decoration: none;
+    color: blue;
+    transition: .5s;
+}
+
+.forgot:hover,
+.forgot:active {
+    color: yellow;
+}
+
+@media (max-width: 576px) {
+    .bg {background-position: 50%}
 }
