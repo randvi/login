@@ -5,7 +5,7 @@ html, body {
 }
 .bg {
     height: 100%;
-    background: url(bg.jpg) no-repeat;
+    /* background: url(bg.jpg) no-repeat; */
     background-size: cover;
     background-position: center;
     background-color: white; /* lightsalmon;*/
@@ -18,29 +18,26 @@ html, body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
     width: 320px;
     height: 430px;
+    margin-bottom: 20px;
     padding: 80px 40px;
     box-sizing: border-box;
     /*font-size: 20px;*/
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, .6);
     color: whitesmoke;
-<<<<<<< HEAD
     border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, .8);
-=======
-
->>>>>>> 5315e00cb64a7e868ba7d8aa8a4255ac67004be9
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 1);
 } 
 .user {
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     overflow: hidden;
     position: absolute;
-    top: calc(-150px/2);
-    left: calc(50% - 150px/2);
+    top: calc(-130px/2);
+    left: calc(50% - 130px/2);
 }
 h2 {
     margin: 0;
@@ -88,15 +85,14 @@ h2 {
     height: 40px;
     color: #fff;
     font-size: 16px;
-    background: #ff265c;
+    background: red;
     border-radius: 50px;
     transition: .5s;
 }
 
 .loginBox input[type="submit"]:hover {
-    background: red;
+    background-color: #F15025;;
 }
-
 
 .forgot {
     text-decoration: none;
@@ -109,6 +105,13 @@ h2 {
     color: yellow;
 }
 
-@media (max-width: 576px) {
-    .bg {background-position: 50%}
+/* @media (max-width: 576px) {
+    .bg {background-position: 50%; }
+} */
+
+@media (max-height : 480px) {
+    .loginBox {
+        top: 50px;
+        transform: translateX(-50%);
+    } 
 }
