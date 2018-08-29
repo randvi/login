@@ -13,7 +13,10 @@ const server = http.createServer(function(request, response) {
         response.end(user);
     } else if (request.url === '/bg.jpg') {
         const bg = fs.readFileSync('bg.jpg');
-        response.end(bg);  
+        response.end(bg); 
+    } else if (request.url === '/logo_pinmode.jpg') {
+        const logo = fs.readFileSync('logo_pinmode.jpg');
+        response.end(logo);       
     } else {
         const html = fs.readFileSync('index.html','utf-8');
         response.end(html);
